@@ -1,8 +1,8 @@
 # Workshop d'intégration front-end sur le thème de la station spartiale internationale.
 
 ## Brief du projet + Maquette (figma) :
-https://drive.google.com/file/d/1jIGeoB3g4DCj7fBx_G1v88nhn872vtd8
-https://www.figma.com/file/BPFuGS7HMzIftdoQ2MMjTd/workshop-ecv-ISS?node-id=0%3A1
+- https://drive.google.com/file/d/1jIGeoB3g4DCj7fBx_G1v88nhn872vtd8
+- https://www.figma.com/file/BPFuGS7HMzIftdoQ2MMjTd/workshop-ecv-ISS?node-id=0%3A1
 
 ## Attendus :
 - Utilisation de l'api pour obtenir des informations en direct de l'ISS
