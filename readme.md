@@ -10,13 +10,13 @@
 - Utilisation de Leaflet.js pour afficher une map
 
 ## Idées pour le projet:
-- Afficher où est la station ISS en temps réel
+- Afficher où est la station ISS en temps réel avec l'api + leaflet.js
+- Afficher la courbe de vélocité de la station ISS avec Chart.js
 - Changer la couleur du thème du site en fonction de s'il fait nuit ou pas
 - Changer les animations en fonctions de si la station est au dessus de l'eau ou au dessus de la terre
 - Utiliser la librairie anime.js pour les animations
 - Savoir a combien de KM et de temps se situe la station spatiale à pied / en vélo / en voiture (juste pour le fun)
-- Signe internaspatiologique en fonction de la position de la station à sa naissance
-- Afficher la courbe de vélocité de la station ISS avec Chart.js
+- Signe internaspatiologique en fonction de la position de la station à sa naissance (juste pour le fun)
 
 *Workshop ECV - Digital - Lille - 21/09/2020*
 *Gellé Matthieu / web_disciple*
