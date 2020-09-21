@@ -1,4 +1,4 @@
-# Workshop d'intégration front-end sur le thème de la station spartiale internationale.
+# Workshop d'intégration front-end sur le thème de la station spatiale internationale.
 
 ## Brief du projet + Maquette (figma) :
 - https://drive.google.com/file/d/1jIGeoB3g4DCj7fBx_G1v88nhn872vtd8
