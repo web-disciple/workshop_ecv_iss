@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  ${require('./components/blocks/_head.html')}
+  <meta name="description" content="La SSI c'est fantstatic !">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Web Disciple">
+  <script type="text/javascript" src="http://www.webglearth.com/v2/api.js"></script>
+  <script type="text/javascript" src="/js/specific/homepage.js"></script>
+</head>
+
+<body>
+  <main>
+    <div class="flex flex-col lg:flex-row lg:h-screen">
+      <section class="w-full p-4 lg:w-1/2 lg:flex lg:justify-center lg:items-center">
+        <div class="max-w-lg mr-0">
+          <div class="pb-2">
+            ${require('./components/atoms/titles/_tag.html') text="Vers la SSI et au-delà !"}
+          </div>
+          <div class="pb-4">
+            ${require('./components/atoms/titles/_h1.html') title="SSI : Station Spaciale
+            Internationale"}
+          </div>
+          <div class="pb-2">
+            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="La curiosité est un vilain défaut. Mais
+            pas quand il s’agit de la station spaciale internationale !"}
+          </div>
+          <div class="pb-6">
+            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="Grâce à nos technologies
+            d'algorithmiques
+            de pointes, nous sommes à même de vous montrer :"}
+          </div>
+          <div class="flex flex-col">
+            <div id="road-to-map-1">
+              ${require('./components/blocks/_ctaBlock.html')
+              title="Où se situe en temps réel la SSI ?"
+              text="Actuellement au-dessus de l’Afrique du sud. Regardez ça jolie courbe sur notre carte."
+              link="#map"
+              textLink="La carte"}
+            </div>
+            <div>
+              ${require('./components/blocks/_ctaBlock.html')
+              title="À quelle vitesse orbite la SSI ?"
+              text="Notre IA forte nous permet de savoir qu’actuellement elle vole à environ 3600 km/h."
+              link="#graph"
+              textLink="Le graphique"}
+            </div>
+            <div>
+              ${require('./components/blocks/_ctaBlock.html')
+              title="Quelle est votre signe internaspatiologique ?"
+              text="Vous êtes née avant 1998 et vous pensez que l’astrologie c’est bidon ? Et bien nous aussi."
+              link="#internaspatiologique"
+              textLink="Mon signe"}
+            </div>
+            <div>
+              ${require('./components/blocks/_socialNetworksRow.html')}
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-full p-4 lg:w-1/2 lg:flex lg:justify-center bg-color-dark-blue lg:items-center">
+        <div id="earth_container">
+        </div>
+      </section>
+    </div>
+    <div id="map" class="flex flex-col lg:flex-row-reverse lg:h-screen">
+      <section class="w-full p-4 lg:w-1/2 lg:flex lg:justify-center lg:items-center">
+        <div class="max-w-lg mr-0">
+          <div class="pb-2">
+            ${require('./components/atoms/titles/_tag.html') text="Une SSI nomade."}
+          </div>
+          <div class="pb-4">
+            ${require('./components/atoms/titles/_h1.html') title="Où se situe en temps réel la SSI ?"}
+          </div>
+          <div class="pb-2">
+            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="La SSI fait environs 15 à 16 fois le tour de la terre par jour, c'est dingue non ?!"}
+          </div>
+          <div class="pb-6">
+            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="Sur la carte à votre gauche vous pouvez voir en direct où se situe la station."}
+          </div>
+          <div class="flex flex-col">
+            <div>
+              ${require('./components/blocks/_ctaBlock.html')
+              title="À quelle vitesse orbite la SSI ?"
+              text="Notre IA forte nous permet de savoir qu’actuellement elle vole à environ 3600 km/h."
+              link="#graph"
+              textLink="Le graphique"}
+            </div>
+            <div>
+              ${require('./components/blocks/_ctaBlock.html')
+              title="Quelle est votre signe internaspatiologique ?"
+              text="Vous êtes née avant 1998 et vous pensez que l’astrologie c’est bidon ? Et bien nous aussi."
+              link="#internaspatiologique"
+              textLink="Mon signe"}
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-full p-4 lg:w-1/2 lg:flex lg:justify-center bg-color-dark-blue lg:items-center">
+        <div class="map_container flex justify-center">
+          <div id="leaflet-map">
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="graph" class="flex flex-col lg:flex-row lg:h-screen">
+      <section class="w-full p-4 lg:w-1/2 lg:flex lg:justify-center lg:items-center">
+        <div class="max-w-lg mr-0">
+          <div class="pb-2">
+            ${require('./components/atoms/titles/_tag.html') text="Ça va viiiiite !"}
+          </div>
+          <div class="pb-4">
+            ${require('./components/atoms/titles/_h1.html') title="À quelle vitesse orbite la SSI ?"}
+          </div>
+          <div class="pb-2">
+            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="La vitesse moyenne de la SSI est de 27 600 km/h, La station est longue de 109 mètres, large de 73 mètres et pèse 419 tonnes. C'est absolument génial !"}
+          </div>
+          <div class="pb-6">
+            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="À votre droite vous pouvez observer le graphique illustrant la vélocité de la station."}
+          </div>
+          <div class="flex flex-col">
+            <div id="road-to-map-2">
+              ${require('./components/blocks/_ctaBlock.html')
+              title="Où se situe en temps réel la SSI ?"
+              text="Actuellement au-dessus de l’Afrique du sud. Regardez ça jolie courbe sur notre carte."
+              link="#map"
+              textLink="La carte"}
+            </div>
+            <div>
+              ${require('./components/blocks/_ctaBlock.html')
+              title="Quelle est votre signe internaspatiologique ?"
+              text="Vous êtes née avant 1998 et vous pensez que l’astrologie c’est bidon ? Et bien nous aussi."
+              link="#internaspatiologique"
+              textLink="Mon signe"}
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-full p-4 lg:w-1/2 lg:flex lg:justify-center bg-color-dark-blue lg:items-center">
+        <div class="flex justify-center items-center">
+          <canvas id="space-chart" width="800" height="800">
+          </canvas>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>

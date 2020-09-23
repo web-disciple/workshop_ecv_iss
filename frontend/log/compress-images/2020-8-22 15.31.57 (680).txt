@@ -1,0 +1,8 @@
+File from: [_dev/ressources/images/icons/satellite.png]
+
+File to: [dist/ressources/images/icons/satellite.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: C:\Users\mgelle\Documents\Projets web\ecv\workshop_ecv_iss\frontend\node_modules\pngquant-bin\vendor\pngquant.exe --quality=20-50 _dev/ressources/images/icons/satellite.png
+  error: '_dev\ressources\images\icons\satellite-fs8.png' exists; not overwriting

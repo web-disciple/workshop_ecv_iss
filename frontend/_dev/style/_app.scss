@@ -1,0 +1,17 @@
+// Plugins
+@import "./plugins/plugins";
+
+// Utilities
+@import "./utilities/fonts";
+@import "./utilities/variables";
+
+
+// Components
+@import "./components/layouts/layouts";
+@import "./components/atoms/atoms";
+@import "./components/blocks/blocks";
+
+html {
+    font-family: $font-base;
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,26 @@
+.text-purple {
+    color: $color-purple;
+}
+
+.cta--arrow {
+    transition: 175ms ease-in-out;
+    transform: translateX(-200%);
+    opacity: 0;
+}
+
+.cta-hover {
+    transition: 175ms ease-in-out;
+    img,
+    p {
+        transition: 175ms ease-in-out;
+    }
+    &:hover {
+        .cta--arrow {
+            transform: translateX(-100%);
+            opacity: 1;
+        }
+        p {
+            color: $color-light-purple;
+        }
+    }
+}
