@@ -6,7 +6,7 @@
   <meta name="description" content="La SSI c'est fantstatic !">
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta name="author" content="Web Disciple">
-  <script type="text/javascript" src="http://www.webglearth.com/v2/api.js"></script>
+  <script type="text/javascript" src="https://www.webglearth.com/v2/api.js"></script>
   <script type="text/javascript" src="/js/specific/homepage.js"></script>
 </head>
 
@@ -139,8 +139,48 @@
       </section>
       <section class="w-full p-4 lg:w-1/2 lg:flex lg:justify-center bg-color-dark-blue lg:items-center">
         <div class="flex justify-center items-center">
-          <canvas id="space-chart" width="800" height="800">
+          <canvas id="space-chart" width="600" height="600">
           </canvas>
+        </div>
+      </section>
+    </div>
+    <div id="internaspatiologique" class="flex flex-col lg:flex-row-reverse lg:h-screen">
+      <section class="w-full p-4 lg:w-1/2 lg:flex lg:justify-center lg:items-center">
+        <div class="max-w-lg mr-0">
+          <div class="pb-2">
+            ${require('./components/atoms/titles/_tag.html') text="Les étoiles ne régissent pas notre destin. L'ISS oui."}
+          </div>
+          <div class="pb-4">
+            ${require('./components/atoms/titles/_h1.html') title="Quelle est votre signe internaspatiologique ? ?"}
+          </div>
+          <div class="pb-2">
+            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="Selon les plus grands astrologues les étoiles influent sur nos vies lors de notre naissance. Nottament en nous désignant des signes astrologiques."}
+          </div>
+          <div class="pb-6">
+            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="Nous sommes intimement convaincus que tout cela est du vent ! En effet, la SSI étant bien plus proche de nos têtes que les étoiles elle est donc énormément plus influente sur nos vie !"}
+          </div>
+          <div class="flex flex-col">
+            <div>
+              ${require('./components/blocks/_ctaBlock.html')
+              title="À quelle vitesse orbite la SSI ?"
+              text="Notre IA forte nous permet de savoir qu’actuellement elle vole à environ 3600 km/h."
+              link="#graph"
+              textLink="Le graphique"}
+            </div>
+            <div id="road-to-map-3">
+              ${require('./components/blocks/_ctaBlock.html')
+              title="Où se situe en temps réel la SSI ?"
+              text="Actuellement au-dessus de l’Afrique du sud. Regardez ça jolie courbe sur notre carte."
+              link="#map"
+              textLink="La carte"}
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-full p-4 lg:w-1/2 lg:flex lg:justify-center bg-color-dark-blue lg:items-center">
+        <div class="map_container flex justify-center">
+          <div id="leaflet-map">
+          </div>
         </div>
       </section>
     </div>
