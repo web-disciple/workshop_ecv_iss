@@ -62,7 +62,7 @@ class SpaceChart {
     spaceGraphData(timestamp, velocity) {
         let label = new Date(timestamp * 1000).getHours() + ':' + new Date(timestamp * 1000).getMinutes()
         this.labels.push(label)
-        this.data.push(velocity)
+        this.data.push(Math.round(velocity))
         this.chart.update();
     }
 }

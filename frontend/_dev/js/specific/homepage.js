@@ -12,10 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const leafletMap = new LeafletMap();
     const spaceChart = new SpaceChart();
 
-    iss.dataByDate().then((iss_data_by_date) => {
-        console.log("iss_data_by_date :", iss_data_by_date)
-    })
-
     // init earth and world 3d instance after get data of iss
     iss.data().then((iss_data) => {
         // Earth

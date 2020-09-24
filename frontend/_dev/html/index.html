@@ -151,13 +151,16 @@
             ${require('./components/atoms/titles/_tag.html') text="Les étoiles ne régissent pas notre destin. L'ISS oui."}
           </div>
           <div class="pb-4">
-            ${require('./components/atoms/titles/_h1.html') title="Quelle est votre signe internaspatiologique ? ?"}
+            ${require('./components/atoms/titles/_h1.html') title="Quelle est votre signe internaspatiologique ?"}
           </div>
           <div class="pb-2">
             ${require('./components/atoms/paragraphs/_paragraphGray.html') text="Selon les plus grands astrologues les étoiles influent sur nos vies lors de notre naissance. Nottament en nous désignant des signes astrologiques."}
           </div>
           <div class="pb-6">
-            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="Nous sommes intimement convaincus que tout cela est du vent ! En effet, la SSI étant bien plus proche de nos têtes que les étoiles elle est donc énormément plus influente sur nos vie !"}
+            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="Nous sommes intimement convaincus que tout cela est du vent ! En effet, la SSI étant bien plus proche de nos têtes que les étoiles elle est donc énormément plus influente sur nos vies !"}
+          </div>
+          <div class="flex justify-center pb-6">
+            <input class="input_date" type="date" name="birth" id="birth">
           </div>
           <div class="flex flex-col">
             <div>
@@ -179,10 +182,25 @@
       </section>
       <section class="w-full p-4 lg:w-1/2 lg:flex lg:justify-center bg-color-dark-blue lg:items-center">
         <div class="map_container flex justify-center">
-          <div id="leaflet-map">
+          <div class="flex justify-center items-center">
+            <div class="flex justify-center items-center max-w-sm mx-auto flex-wrap">
+              <img class="h-32 p-4" src="/ressources/images/icons/animals/alpaca.svg" alt="">
+              <img class="h-32 p-4" src="/ressources/images/icons/animals/bear.svg" alt="">
+              <img class="h-32 p-4" src="/ressources/images/icons/animals/elephant.svg" alt="">
+              <img class="h-32 p-4" src="/ressources/images/icons/animals/flamingo.svg" alt="">
+              <img class="h-32 p-4" src="/ressources/images/icons/animals/hedgehog.svg" alt="">
+              <img class="h-32 p-4" src="/ressources/images/icons/animals/horse.svg" alt="">
+              <img class="h-32 p-4" src="/ressources/images/icons/animals/kangaroo.svg" alt="">
+              <img class="h-32 p-4" src="/ressources/images/icons/animals/koala.svg" alt="">
+              <img class="h-32 p-4" src="/ressources/images/icons/animals/lion.svg" alt="">
+              <img class="h-32 p-4" src="/ressources/images/icons/animals/snake.svg" alt="">
+            </div>
           </div>
         </div>
       </section>
+    </div>
+    <div>
+      ${require('./components/blocks/_confettis.html')}
     </div>
   </main>
 </body>
