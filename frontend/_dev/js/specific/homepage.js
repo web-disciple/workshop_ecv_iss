@@ -64,4 +64,8 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     birthday.init();
+    birthday.input.addEventListener("change", (input) => {
+        birthday.getSign(input.target.valueAsNumber).then((data) => [
+        ]);
+    })
 });

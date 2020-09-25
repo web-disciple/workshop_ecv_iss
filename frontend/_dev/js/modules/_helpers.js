@@ -5,6 +5,11 @@ class Helpers {
         return check;
     }
     async getFromApi(path) {
+        const headers = new Headers({
+            'Content-Type': 'text/xml',
+            'Access-Control-Allow-Origin': '*',
+            'mode': 'no-cors'
+        });
         let request = await fetch(path)
             .then(function (response) {
                 return response.json();
@@ -20,17 +25,3 @@ class Helpers {
 }
 
 export default Helpers;
-
-
-// Accept: application/json, text/javascript, */*; q=0.01
-// Accept-Encoding: gzip, deflate
-// Accept-Language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7
-// Connection: keep-alive
-// Content-Length: 50
-// Content-Type: application/x-www-form-urlencoded; charset=UTF-8
-// Cookie: _ga=GA1.2.802954440.1600889885; _gid=GA1.2.170047169.1600889885
-// Host: www.isstracker.com
-// Origin: http://www.isstracker.com
-// Referer: http://www.isstracker.com/home
-// User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36
-// X-Requested-With: XMLHttpRequest
