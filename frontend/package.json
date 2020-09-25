@@ -19,6 +19,7 @@
         "dotenv": "^8.2.0",
         "empty-folder": "^2.0.4",
         "gifsicle": "^5.1.0",
+        "gsap": "^3.5.1",
         "html-includes": "^4.3.3",
         "https-localhost": "^4.6.2",
         "leaflet": "^1.7.1",

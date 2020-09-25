@@ -6,13 +6,14 @@
   <meta name="description" content="La SSI c'est fantstatic !">
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta name="author" content="Web Disciple">
-  <script type="text/javascript" src="https://www.webglearth.com/v2/api.js"></script>
-  <script type="text/javascript" src="/js/specific/homepage.js"></script>
+  <link rel="preconnect" href="https://api.wheretheiss.at/v1/satellites/25544" crossorigin>
+  <script type="text/javascript" src="https://www.webglearth.com/v2/api.js" defer></script>
+  <script type="text/javascript" src="/js/specific/homepage.js" defer></script>
 </head>
 
 <body>
   <main>
-    <div class="flex flex-col lg:flex-row lg:h-screen">
+    <div id="iss-world" class="flex flex-col lg:flex-row lg:h-screen">
       <section class="w-full p-4 lg:w-1/2 lg:flex lg:justify-center lg:items-center">
         <div class="max-w-lg mr-0">
           <div class="pb-2">
@@ -32,6 +33,13 @@
             de pointes, nous sommes à même de vous montrer :"}
           </div>
           <div class="flex flex-col">
+            <div id="find-iss-globe-1">
+              ${require('./components/blocks/_ctaBlock.html')
+              title="Je veux visualiser la position de l'ISS ?"
+              text="Elle tourne autour du globe sans jamais abandonné sa trajectoire."
+              link="#iss-world"
+              textLink="Trouve moi l'ISS stp"}
+            </div>
             <div id="road-to-map-1">
               ${require('./components/blocks/_ctaBlock.html')
               title="Où se situe en temps réel la SSI ?"
@@ -74,12 +82,21 @@
             ${require('./components/atoms/titles/_h1.html') title="Où se situe en temps réel la SSI ?"}
           </div>
           <div class="pb-2">
-            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="La SSI fait environs 15 à 16 fois le tour de la terre par jour, c'est dingue non ?!"}
+            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="La SSI fait environs 15 à 16 fois le
+            tour de la terre par jour, c'est dingue non ?!"}
           </div>
           <div class="pb-6">
-            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="Sur la carte à votre gauche vous pouvez voir en direct où se situe la station."}
+            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="Sur la carte à votre gauche vous pouvez
+            voir en direct où se situe la station."}
           </div>
           <div class="flex flex-col">
+            <div id="find-iss-globe-2">
+              ${require('./components/blocks/_ctaBlock.html')
+              title="Je veux visualiser la position de l'ISS ?"
+              text="Elle tourne autour du globe sans jamais abandonné sa trajectoire."
+              link="#iss-world"
+              textLink="Trouve moi l'ISS stp"}
+            </div>
             <div>
               ${require('./components/blocks/_ctaBlock.html')
               title="À quelle vitesse orbite la SSI ?"
@@ -114,12 +131,22 @@
             ${require('./components/atoms/titles/_h1.html') title="À quelle vitesse orbite la SSI ?"}
           </div>
           <div class="pb-2">
-            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="La vitesse moyenne de la SSI est de 27 600 km/h, La station est longue de 109 mètres, large de 73 mètres et pèse 419 tonnes. C'est absolument génial !"}
+            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="La vitesse moyenne de la SSI est de 27
+            600 km/h, La station est longue de 109 mètres, large de 73 mètres et pèse 419 tonnes. C'est absolument
+            génial !"}
           </div>
           <div class="pb-6">
-            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="À votre droite vous pouvez observer le graphique illustrant la vélocité de la station."}
+            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="À votre droite vous pouvez observer le
+            graphique illustrant la vélocité de la station."}
           </div>
           <div class="flex flex-col">
+            <div id="find-iss-globe-3">
+              ${require('./components/blocks/_ctaBlock.html')
+              title="Je veux visualiser la position de l'ISS ?"
+              text="Elle tourne autour du globe sans jamais abandonné sa trajectoire."
+              link="#iss-world"
+              textLink="Trouve moi l'ISS stp"}
+            </div>
             <div id="road-to-map-2">
               ${require('./components/blocks/_ctaBlock.html')
               title="Où se situe en temps réel la SSI ?"
@@ -148,21 +175,33 @@
       <section class="w-full p-4 lg:w-1/2 lg:flex lg:justify-center lg:items-center">
         <div class="max-w-lg mr-0">
           <div class="pb-2">
-            ${require('./components/atoms/titles/_tag.html') text="Les étoiles ne régissent pas notre destin. L'ISS oui."}
+            ${require('./components/atoms/titles/_tag.html') text="Les étoiles ne régissent pas notre destin. L'ISS
+            oui."}
           </div>
           <div class="pb-4">
             ${require('./components/atoms/titles/_h1.html') title="Quelle est votre signe internaspatiologique ?"}
           </div>
           <div class="pb-2">
-            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="Selon les plus grands astrologues les étoiles influent sur nos vies lors de notre naissance. Nottament en nous désignant des signes astrologiques."}
+            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="Selon les plus grands astrologues les
+            étoiles influent sur nos vies lors de notre naissance. Nottament en nous désignant des signes
+            astrologiques."}
           </div>
           <div class="pb-6">
-            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="Nous sommes intimement convaincus que tout cela est du vent ! En effet, la SSI étant bien plus proche de nos têtes que les étoiles elle est donc énormément plus influente sur nos vies !"}
+            ${require('./components/atoms/paragraphs/_paragraphGray.html') text="Nous sommes intimement convaincus que
+            tout cela est du vent ! En effet, la SSI étant bien plus proche de nos têtes que les étoiles elle est donc
+            énormément plus influente sur nos vies !"}
           </div>
           <div class="flex justify-center pb-6">
             <input class="input_date" type="date" name="birth" id="birth">
           </div>
           <div class="flex flex-col">
+            <div id="find-iss-globe-4">
+              ${require('./components/blocks/_ctaBlock.html')
+              title="Je veux visualiser la position de l'ISS ?"
+              text="Elle tourne autour du globe sans jamais abandonné sa trajectoire."
+              link="#iss-world"
+              textLink="Trouve moi l'ISS stp"}
+            </div>
             <div>
               ${require('./components/blocks/_ctaBlock.html')
               title="À quelle vitesse orbite la SSI ?"
@@ -198,9 +237,6 @@
           </div>
         </div>
       </section>
-    </div>
-    <div>
-      ${require('./components/blocks/_confettis.html')}
     </div>
   </main>
 </body>

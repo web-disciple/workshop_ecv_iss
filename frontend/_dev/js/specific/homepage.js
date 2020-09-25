@@ -2,6 +2,7 @@ import Earth from "../modules/_earth";
 import Iss from "../modules/_iss";
 import LeafletMap from "../modules/_map";
 import SpaceChart from "../modules/_SpaceChart";
+import Birthday from "../modules/_birthday";
 
 // Dom as ready
 document.addEventListener("DOMContentLoaded", () => {
@@ -11,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const iss = new Iss;
     const leafletMap = new LeafletMap();
     const spaceChart = new SpaceChart();
+    const birthday = new Birthday();
 
     // init earth and world 3d instance after get data of iss
     iss.data().then((iss_data) => {
@@ -19,9 +21,18 @@ document.addEventListener("DOMContentLoaded", () => {
         earth.initialize_earth(world3D, iss_data);
 
         // document listener of earth
-        document.getElementById("earth_container").addEventListener("wheel", () => {
-            earth.manageZoom(world3D);
-        });
+        document.getElementById("find-iss-globe-1").addEventListener("click", () => {
+            earth.flyToIss(world3D)
+        })
+        document.getElementById("find-iss-globe-2").addEventListener("click", () => {
+            earth.flyToIss(world3D)
+        })
+        document.getElementById("find-iss-globe-3").addEventListener("click", () => {
+            earth.flyToIss(world3D)
+        })
+        document.getElementById("find-iss-globe-4").addEventListener("click", () => {
+            earth.flyToIss(world3D)
+        })
 
         // Leafletmap
         // init leaflet map
@@ -51,4 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
             })
         }, 10000);
     })
+
+    birthday.init();
 });

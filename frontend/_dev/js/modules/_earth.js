@@ -8,12 +8,15 @@ class Earth {
                 b: 8.2266,
                 zoom: 2.5,
                 zoomMobile: 0,
+            },
+            this.currentCoordinates = {
+                latitude: null,
+                longitude: null
             }
     }
     initialize_earth(world3D, iss_coordinates) {
         this.manageZoom(world3D);
         this.addTexture(world3D);
-        this.animateEarth(world3D);
         this.updateIssMarker(world3D, iss_coordinates.latitude, iss_coordinates.longitude)
     }
 
@@ -57,13 +60,25 @@ class Earth {
             })
             deleteOldMarker.then(() => {
                 let marker = WE.marker([latitude, longitude], '/ressources/images/icons/sattelite.svg', 100, 100).addTo(world3D);
-                this.currentMarkerIss = marker
+                this.currentMarkerIss = marker;
+                this.currentCoordinates = {
+                    latitude: latitude,
+                    longitude: longitude
+                }
             })
         }
         else {
             let marker = WE.marker([latitude, longitude], '/ressources/images/icons/sattelite.svg', 100, 100).addTo(world3D);
-            this.currentMarkerIss = marker
+            this.currentMarkerIss = marker;
+            this.currentCoordinates = {
+                latitude: latitude,
+                longitude: longitude
+            }
         }
+    }
+
+    flyToIss(world3D) {
+        world3D.panTo([this.currentCoordinates.latitude, this.currentCoordinates.longitude])
     }
 
 }
